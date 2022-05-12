@@ -17,4 +17,7 @@
 .main-container__item--main {
 	height: 100vh;
 	background-image: url('/public/images/landingPage-background.jpg');
+	background-size: 100rem;
+	background-position: center;
+	box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
 }
