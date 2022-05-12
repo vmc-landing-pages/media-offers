@@ -1,0 +1,20 @@
+:root {
+	--bg-color: #000;
+	--color: #fff;
+}
+
+.main-container {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--bg-color);
+	color: var(--color);
+}
+
+.main-container > div {
+	padding: 4.375rem 2.813rem;
+}
+
+.main-container__item--main {
+	height: 100vh;
+	background-image: url('/public/images/landingPage-background.jpg');
+}

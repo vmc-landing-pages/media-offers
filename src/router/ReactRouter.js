@@ -5,8 +5,8 @@ function ReactRouter() {
 	return (
 		<Router>
 			<Routes>
-				{publicRoutes.map(route => (
-					<Route {...route} />
+				{publicRoutes.map((route, i) => (
+					<Route key={i} {...route} />
 				))}
 			</Routes>
 		</Router>

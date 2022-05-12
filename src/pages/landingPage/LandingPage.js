@@ -1,14 +1,15 @@
-import { Link } from 'react-router-dom';
+import './LandingPage.css';
 
 export default function LandingPage() {
 	return (
-		<div>
-			<p>
-				This is the landing page page, it's intended to have a separate place to begin to develope
-				your landing page without touch the home page, that has all the redux and router
-				functionality.
-			</p>
-			<Link to="./home">Go to home page.</Link>
+		<div className="main-container">
+			{Array(7)
+				.fill('')
+				.map((_, i) => (
+					<div key={i} className={i === 0 ? 'main-container__item--main' : ''}>
+						item!
+					</div>
+				))}
 		</div>
 	);
 }
