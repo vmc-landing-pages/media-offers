@@ -1,4 +1,5 @@
-import './LandingPage.css';
+import { Button } from 'vmc-react-js-components';
+import './LandingPage.scss';
 
 export default function LandingPage() {
 	return (
@@ -7,7 +8,8 @@ export default function LandingPage() {
 				.fill('')
 				.map((_, i) => (
 					<div key={i} className={i === 0 ? 'main-container__item--main' : ''}>
-						item!
+						<Button size="medium" label="button" backgroundColor="red" />
+						<br />
 					</div>
 				))}
 		</div>
